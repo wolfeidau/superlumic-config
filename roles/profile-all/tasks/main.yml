@@ -6,6 +6,7 @@
     - slack
     - dropbox
     - keepingyouawake
+    - 1password
 
 - name: place the aliases configuration file
   become: yes
