@@ -15,9 +15,6 @@
 - src: https://github.com/superlumic/ansible-role-mysql.git
   name: roderik.superlumic-mysql
 
-- src: https://github.com/superlumic/ansible-role-php.git
-  name: roderik.superlumic-php
-
 - src: https://github.com/superlumic/ansible-role-sublimetext.git
   name: roderik.superlumic-sublimetext
 
@@ -35,3 +32,6 @@
 
 - src: https://github.com/superlumic/ansible-role-skylab.git
   name: roderik.superlumic-skylab
+
+- src: https://github.com/hnakamur/ansible-role-atom-packages.git
+  name: hnakamur.atom-packages

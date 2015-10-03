@@ -38,6 +38,9 @@
     - computername: magnetic
     - git_user_name: Mark Wolfe
     - git_user_email: mark@wolfe.id.au
+    - atom_packages_packages:
+      - go-runtime
+      - go-plus
     - sublime_packages:
         - dest: "SideBarEnhancements"
           repo: "https://github.com/titoBouzout/SideBarEnhancements"

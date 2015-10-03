@@ -15,4 +15,6 @@ dependencies:
   - roderik.superlumic-cli
   - roderik.superlumic-homebrew
   - roderik.superlumic-sublimetext
+  - roderik.superlumic-node
+  - hnakamur.atom-packages
   - profile-all

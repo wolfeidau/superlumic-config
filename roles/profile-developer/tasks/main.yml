@@ -13,6 +13,7 @@
     - rsync
     - git-flow
     - hub
+    - go
 
 - name: install developer cask applications
   homebrew_cask: name={{item}} state=present
@@ -21,3 +22,4 @@
     - sequel-pro
     - java6
     - java
+    - atom
