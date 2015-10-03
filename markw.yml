@@ -13,6 +13,11 @@
         - imagealpha
         - sketch-toolbox
         - sonos
+    - name: install personal brew applications
+      homebrew: name={{item}} state=latest
+      with_items:
+        - rethinkdb
+        - postgres
     - name: create ssh directory
       become: yes
       file:
