@@ -12,5 +12,5 @@
 - name: install macvim
   homebrew: name=macvim state=present install_options=with-lua
 
-- name: Install spf13
-  command: curl http://j.mp/spf13-vim3 -L -o - | sh
+- name: install spf13 vim plugin distribution
+  command: bash -c "curl http://j.mp/spf13-vim3 -L -o - | sh"

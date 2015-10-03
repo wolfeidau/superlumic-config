@@ -32,7 +32,7 @@
   roles:
     - profile-all
     - profile-developer
-    - spf13-vim3
+    - spf13-vim
 
   vars:
     - computername: magnetic
