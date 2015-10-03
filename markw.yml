@@ -13,6 +13,7 @@
         - imagealpha
         - sketch-toolbox
         - sonos
+        - vmware-fusion
     - name: install personal brew applications
       homebrew: name={{item}} state=latest
       with_items:
@@ -41,7 +42,7 @@
     - golang
 
   vars:
-    - computername: magnetic
+    - computername: beowulf
     - git_user_name: Mark Wolfe
     - git_user_email: mark@wolfe.id.au
     - atom_packages_packages:

@@ -15,6 +15,9 @@
     - hub
     - ack
     - awscli
+    - docker
+    - docker-machine
+    - packer
 
 - name: install developer cask applications
   homebrew_cask: name={{item}} state=present
