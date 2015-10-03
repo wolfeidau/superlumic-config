@@ -33,6 +33,7 @@
     - profile-all
     - profile-developer
     - spf13-vim
+    - golang
 
   vars:
     - computername: magnetic

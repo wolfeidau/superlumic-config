@@ -4,7 +4,7 @@
   homebrew: name=go state=present
 
 - name: install gofmt
-  command: go get -u {{item}}
+  command: go get {{item}}
   environment:
     GOPATH: "{{ lookup('env','HOME') }}/Code/go"
   with_items:
@@ -20,4 +20,4 @@
   file: state=touch path={{home_directory}}/.bash_profile
 
 - name: add GOPATH to bash_profile
-  lineinfile: dest={{home_directory}}/.bash_profile regexp="^export GOPATH=$HOME\/Code\/go" line="export GOPATH=$HOME/Code/go"
+  lineinfile: dest=~/.bash_profile regexp="^export GOPATH=$HOME\/Code\/go" line="export GOPATH=$HOME/Code/go"
