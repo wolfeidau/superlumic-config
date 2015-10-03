@@ -24,3 +24,16 @@
     - java6
     - java
     - atom
+    - iterm2
+
+- name: install developer tap for fonts
+  homebrew_tap: tap=caskroom/fonts state=present
+
+- name: install developer fonts
+  homebrew_cask: name={{item}} state=present
+  with_items:
+    - font-inconsolata
+    - font-roboto
+    - font-roboto-mono
+    - font-source-code-pro
+    - font-ubuntu
