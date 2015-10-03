@@ -14,4 +14,5 @@
 
 - name: install spf13 vim plugin distribution
   command: bash -c "curl http://j.mp/spf13-vim3 -L -o - | sh"
-  creates: ~/.vim
+  args:
+    creates: ~/.vim
