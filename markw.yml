@@ -13,6 +13,7 @@
         - imagealpha
         - sketch-toolbox
         - sonos
+        - intellij-idea
         - vmware-fusion
     - name: install personal brew applications
       homebrew: name={{item}} state=latest
