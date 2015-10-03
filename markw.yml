@@ -40,6 +40,7 @@
     - profile-developer
     - spf13-vim
     - golang
+    - hnakamur.atom-packages
 
   vars:
     - computername: beowulf
