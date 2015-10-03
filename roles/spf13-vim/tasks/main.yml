@@ -1,0 +1,16 @@
+---
+
+- name: install developer brew applications
+  homebrew: name={{item}} state=latest
+  with_items:
+    - curl
+    - git
+
+- name: install vim
+  homebrew: name=vim state=present install_options=with-lua
+
+- name: install macvim
+  homebrew: name=macvim state=present install_options=with-lua
+
+- name: Install spf13
+  command: curl http://j.mp/spf13-vim3 -L -o - | sh
