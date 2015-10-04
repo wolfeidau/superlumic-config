@@ -42,7 +42,6 @@
     - spf13-vim
     - golang
     - hnakamur.atom-packages
-    - credstash
 
   vars:
     - computername: beowulf
