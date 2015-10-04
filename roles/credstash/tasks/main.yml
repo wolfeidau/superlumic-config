@@ -1,0 +1,4 @@
+---
+
+- name: install credstash for all users
+  pip: name=credstash state=present
