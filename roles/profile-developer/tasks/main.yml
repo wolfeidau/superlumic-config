@@ -29,7 +29,6 @@
     - atom
     - iterm2
     - flycut
-    - chrome
 
 - name: install developer tap for fonts
   homebrew_tap: tap=caskroom/fonts state=present
