@@ -12,7 +12,6 @@
         - imageoptim
         - imagealpha
         - sketch-toolbox
-        - sonos
         - intellij-idea
         - vmware-fusion
     - name: install personal brew applications
@@ -20,6 +19,28 @@
       with_items:
         - rethinkdb
         - postgres
+        - redis
+        - gnu-sed
+        - git
+        - git-flow
+        - git-extras
+        - jq
+        - ack
+        - apg
+        - go
+        - glide
+        - hub
+        - hugo
+        - xz
+        - tmux
+        - gnupg
+        - awscli
+        - gettext
+        - maven
+        - packer
+        - docker
+        - docker-machine
+        - kubernetes-cli
     - name: create ssh directory
       become: yes
       file:
