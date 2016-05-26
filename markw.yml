@@ -65,7 +65,7 @@
     - hnakamur.atom-packages
 
   vars:
-    - computername: beowulf
+    - computername: unknown
     - git_user_name: Mark Wolfe
     - git_user_email: mark@wolfe.id.au
     - atom_packages_packages:
