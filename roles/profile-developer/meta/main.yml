@@ -13,7 +13,3 @@ galaxy_info:
 dependencies:
   - roderik.superlumic-computername
   - roderik.superlumic-cli
-  - roderik.superlumic-homebrew
-  - roderik.superlumic-sublimetext
-  - roderik.superlumic-node
-  - profile-all

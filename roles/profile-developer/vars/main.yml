@@ -1,6 +1,5 @@
 
 node_versions:
-    - 0.12
-    - 0.8
+    - 6
 
-default_node_version: 0.12
+default_node_version: 6

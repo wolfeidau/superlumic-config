@@ -1,45 +1,18 @@
 ---
 
-- name: tap caskroom/versions
-  homebrew_tap: tap=caskroom/versions state=present
+- name: install homebrew cask
+  homebrew_tap: tap=caskroom/cask state=present
+
+- name: tap versent/homebrew-taps
+  homebrew_tap: tap=versent/homebrew-taps state=present
 
 - name: install developer brew applications
   homebrew: name={{item}} state=latest
   with_items:
     - wget
-    - apg
-    - htop-osx
+    - pwgen
+    - xmlstarlet
+    - htop
     - watch
     - rsync
-    - git-flow
-    - hub
-    - ack
-    - awscli
-    - docker
-    - docker-machine
-    - packer
-    - coreutils
-
-- name: install developer cask applications
-  homebrew_cask: name={{item}} state=present
-  with_items:
-    - imageoptim
-    - sequel-pro
-    - java6
-    - java
-    - atom
-    - iterm2
-    - flycut
-    - cheatsheet
-
-- name: install developer tap for fonts
-  homebrew_tap: tap=caskroom/fonts state=present
-
-- name: install developer fonts
-  homebrew_cask: name={{item}} state=present
-  with_items:
-    - font-inconsolata
-    - font-roboto
-    - font-roboto-mono
-    - font-source-code-pro
-    - font-ubuntu
+    - saml2aws

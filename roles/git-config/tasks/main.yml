@@ -1,0 +1,10 @@
+---
+# tasks file for git-config
+
+- name: copy global gitignore to home directory
+  copy:
+    src: "{{ role_path }}/files/gitignore_global"
+    dest: ~/.gitignore_global
+
+- name: configure global .gitignore
+  command: git config --global core.excludesfile ~/.gitignore_global
