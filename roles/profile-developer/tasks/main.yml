@@ -16,3 +16,7 @@
     - watch
     - rsync
     - saml2aws
+    - awscli
+    - jq
+    - vim
+    - gnupg
