@@ -16,3 +16,16 @@
     - watch
     - rsync
     - saml2aws
+    - awscli
+    - jq
+    - vim
+    - gnupg
+    - node
+- name: install developer cask applications
+  homebrew_cask: name={{item}} state=present
+  with_items:
+    - docker
+    - java
+    - flycut
+
+

@@ -4,10 +4,6 @@
   connection: local
 
   tasks:
-    - name: install node
-      homebrew: name={{item}} state=latest
-      with_items:
-        - node
     - name: create ssh directory
       become: yes
       file:
@@ -28,10 +24,6 @@
       copy:
         src: files/ssh_config
         dest: /etc/ssh/ssh_config
-    - name: install personal cask applications
-      homebrew_cask: name={{item}} state=present
-      with_items:
-        - docker
 
   roles:
     - profile-developer
