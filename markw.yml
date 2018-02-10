@@ -28,17 +28,28 @@
       copy:
         src: files/ssh_config
         dest: /etc/ssh/ssh_config
+    - name: tap	caskroom/fonts
+      homebrew_tap: tap=caskroom/fonts state=present
     - name: install personal cask applications
       homebrew_cask: name={{item}} state=present
       with_items:
         - docker
+        - visual-studio-code
+        - slack
+        - font-source-code-pro
+        - iterm2
+        - spectacle
+        - font-fira-code
+        - google-chrome
+        - flux
+        - tower
 
   roles:
     - profile-developer
     - golang
 
   vars:
-    - computername: wolfebook-2001
+    - computername: darkmore
     - git_user_name: wolfeidau
     - git_user_email: mark.wolfe@versent.com.au
     - osx_defaults:
