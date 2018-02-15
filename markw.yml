@@ -4,10 +4,12 @@
   connection: local
 
   tasks:
-    - name: install node
+    - name: install presonal applications
       homebrew: name={{item}} state=latest
       with_items:
         - node
+        - ctop
+        - hub
     - name: create ssh directory
       become: yes
       file:
